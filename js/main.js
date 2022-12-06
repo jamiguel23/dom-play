@@ -1,5 +1,15 @@
 "use strict";
 
+
+let actors = document.querySelectorAll(".hamlet");
+ 
+console.log(actors);
+
+for (let i = 0; i < actors.length; i++) {
+  actors[i].style.backgroundColor = "yellow";
+ }
+ 
+
 //https://tinyurl.com/dynamic-html-checker
 document
   .getElementById("html-checker")
