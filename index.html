@@ -12,9 +12,13 @@
     <link rel="stylesheet" href="css/forms.css">
 
     <style>
-        .hamlet{
+        .hamlet {
             /* background-color: yellow;
             display: inline; */
+        }
+
+        #play span{
+            /* background-color:  blue; */
         }
     </style>
 </head>
@@ -24,9 +28,9 @@
         <h1 class="page-header">DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" >Link</a>
-            <a href="#" >Link</a>           
-            <a href="#" >Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
             <a href="javascript:void(0);" class="icon"
                 onclick="myFunction()">&#9776;</a>
         </nav>
@@ -36,9 +40,12 @@
         <h2 class="subheader">DOM Play</h2>
 
 
-        <p class="hamlet"> <span onclick="this.style.backgroundColor='yellow'">Hamlet: to be or not to be?</span></p>        
-        <p> Skull: Are you talking to me?</p>
-        <p class="hamlet"> Hamlet: What did you say?</p>
+        <div id="play">
+
+            <p class="hamlet"> <span>Hamlet: to be or not to be?</span></p>
+            <p> <span>Skull: Are you talking to me?</span> </p>
+            <p class="hamlet"> <span>Hamlet: What did you say?</span></p>
+        </div>
 
 
 

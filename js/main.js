@@ -1,14 +1,32 @@
 "use strict";
 
+function highlight(el){
 
-let actors = document.querySelectorAll(".hamlet");
- 
-console.log(actors);
+  // el.style.backgroundColor='blue'
 
-for (let i = 0; i < actors.length; i++) {
-  actors[i].style.backgroundColor = "goldenrod";
- }
+  if(el.style.background == ''){
+    el.style.background = 'yellow'
+    console.log('yellow')
+  }else {
+    el.style.backgroundColor=''
+    console.log('empty')
+  }
+}
+
+function myAlert(){
+
+  alert("I'm clicked")
+}
+
+let spans = document.querySelectorAll('#play span')
  
+console.log(spans)
+
+for(const mySpan of spans){
+
+  mySpan.addEventListener('click', myAlert);
+
+}
 
 //https://tinyurl.com/dynamic-html-checker
 document
