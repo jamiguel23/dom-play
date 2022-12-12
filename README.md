@@ -1,3 +1,4 @@
-# html-template
+# dom-play
 
-This repo creates a template page
+Deployed Page:
+<https://jamiguel23.github.io/dom-play/>
