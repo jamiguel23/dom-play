@@ -13,18 +13,39 @@ function highlight(el){
   }
 }
 
-function myAlert(){
+let highlightActor = (actor) => {
+  console.log('inhighlight actor function')
 
-  alert("I'm clicked")
+  let spans = document.querySelectorAll('#play span')
+
+  for(const mySpan of spans){
+
+    if(actor == mySpan.dataset.actor ){
+      mySpan.style.background = 'yellow'
+      console.log('yellow')
+    }else {
+      mySpan.style.backgroundColor=''
+      console.log('empty')
+    } 
+  }
+
 }
+
 
 let spans = document.querySelectorAll('#play span')
  
-console.log(spans)
+// console.log(spans)
 
 for(const mySpan of spans){
 
-  mySpan.addEventListener('click', myAlert);
+  // mySpan.addEventListener('click', myAlert);
+  // alert(mySpan.dataset.actor)
+
+  mySpan.addEventListener('click', function(ev){
+    highlightActor(mySpan.dataset.actor)
+
+  });
+  
 
 }
 
