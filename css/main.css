@@ -27,12 +27,13 @@ h1 {
     
 }
 
+
 /* h1.page-header{
     
 } */
 
 main.wrapper {
-background-color: white;
+    background-color: white;
     overflow: auto;
     border-radius: 0px 0px 25px 25px;
 }
@@ -65,6 +66,13 @@ a:hover {
     color: whitesmoke;
     background-color: darkcyan;
     text-decoration: none;
+}
+
+button{
+    margin: 1em;
+}
+div.container{
+    background-color: #FCD271;
 }
 
 footer {
