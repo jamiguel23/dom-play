@@ -1,5 +1,17 @@
 "use strict";
 
+
+
+let spans = document.querySelectorAll('#play span')
+
+let reset = () => {
+  let button = document.getElementById('reset')
+  console.log(button)
+  console.log(spans)
+
+
+}
+
 function highlight(el){
 
   // el.style.backgroundColor='blue'
@@ -15,7 +27,7 @@ function highlight(el){
 
 let highlightActor = (actor) => {
   console.log('inhighlight actor function')
-
+  
   let spans = document.querySelectorAll('#play span')
 
   for(const mySpan of spans){
@@ -32,7 +44,6 @@ let highlightActor = (actor) => {
 }
 
 
-let spans = document.querySelectorAll('#play span')
  
 // console.log(spans)
 
