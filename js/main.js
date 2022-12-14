@@ -6,57 +6,59 @@ let spans = document.querySelectorAll('#play span')
 
 let reset = () => {
   let button = document.getElementById('reset')
-  console.log(button)
-  console.log(spans)
+ 
 
+  for (const mySpan of spans) {
 
-}
+    mySpan.style.backgroundColor = ''
 
-function highlight(el){
-
-  // el.style.backgroundColor='blue'
-
-  if(el.style.background == ''){
-    el.style.background = 'yellow'
-    console.log('yellow')
-  }else {
-    el.style.backgroundColor=''
-    console.log('empty')
   }
+
 }
+
+// function highlight(el) {
+
+//   // el.style.backgroundColor='blue'
+
+//   if (el.style.background == '') {
+//     el.style.background = 'yellow'
+//     console.log('yellow')
+//   } else {
+//     el.style.backgroundColor = ''
+//     console.log('empty')
+//   }
+// }
 
 let highlightActor = (actor) => {
   console.log('inhighlight actor function')
-  
+
   let spans = document.querySelectorAll('#play span')
 
-  for(const mySpan of spans){
+  for (const mySpan of spans) {
 
-    if(actor == mySpan.dataset.actor ){
+    if (actor == mySpan.dataset.actor) {
       mySpan.style.background = 'yellow'
-      console.log('yellow')
-    }else {
-      mySpan.style.backgroundColor=''
-      console.log('empty')
-    } 
+    } else {
+      mySpan.style.backgroundColor = ''
+    }
   }
 
 }
 
 
- 
+
 // console.log(spans)
 
-for(const mySpan of spans){
+for (const mySpan of spans) {
 
   // mySpan.addEventListener('click', myAlert);
   // alert(mySpan.dataset.actor)
 
-  mySpan.addEventListener('click', function(ev){
+  mySpan.addEventListener('click', function (ev) {
     highlightActor(mySpan.dataset.actor)
 
   });
-  
+
 
 }
 
